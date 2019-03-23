@@ -1,0 +1,64 @@
+/**
+ *
+ * Walaszkowe Cytaty
+ * Author: Krzysztof Krawczyk
+ * kkrawczyk.pl
+ * krzysztof@kkrawczyk.pl
+ *
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100|Roboto:400,300,100,500,700|Parisienne);
+/*----------  Helpers  ----------*/
+body{
+	background-color: #f1f1f1;
+	color: #2a2f33;
+	font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.caption{
+	color: #686868;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
+}
+
+.pure-menu{
+	background-color: #fff;
+    border-bottom: 1px solid #e4eaee;
+	padding: 10px;
+}
+
+header{
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/header.jpg);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.panel{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+    padding: 140px 30px;
+}
+.panel > h1 {
+	font-weight: 300;
+}
+.beam{
+	background-color: #fff;
+    border-bottom: 1px solid #e4eaee;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.quote{
+	font-family: 'Parisienne', cursive;
+	font-size: 32px;
+}
