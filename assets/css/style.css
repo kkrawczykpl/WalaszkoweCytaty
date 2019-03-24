@@ -49,16 +49,34 @@ a {
 	font-weight: 300;
 }
 
-.pure-menu {
-	background-color: #fff;
-	border-bottom: 1px solid #e4eaee;
-	padding: 10px;
+.hidden-desktop {
+	display: none !important;
 }
 
 .quote {
 	font-family: 'Parisienne', cursive;
 	font-size: 32px;
 }
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+/* Menu */
+
+.pure-menu {
+	background-color: #fff;
+	border-bottom: 1px solid #e4eaee;
+	padding: 10px;
+}
+
+/* Header */
 
 .header {
 	width: 100%;
@@ -92,6 +110,8 @@ a {
 	padding: 0 30px;
 }
 
+/* Footer */
+
 footer {
 	background-color: #fff;
 	height: 50px;
@@ -106,6 +126,8 @@ footer {
 	bottom: 0;
 	left: 0;
 }
+
+/* Modal */
 
 .modal {
 	display: none;
@@ -156,10 +178,6 @@ footer {
 	width: 200px;
 }
 
-.hidden-desktop {
-	display: none !important;
-}
-
 /* Adding Form */
 .form-container {
 	display: flex;
@@ -180,6 +198,20 @@ textarea {
 
 .required-star {
 	color: #fe628e;
+}
+
+/* Preview Quote Page */
+.preview-quote{
+	width: 100%;
+	height: calc(100vh - 52px);
+}
+.img-preview{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.preview-half{
+	height: 100%;
 }
 
 @media(max-width:976px) {

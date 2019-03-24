@@ -29,9 +29,11 @@
 		    </ul>
 		</div>
 	</div>
+	<?php if(!isset($nonHeader)): ?>
 	<header class="header">
 		<div class="panel">
 			<h1><?php echo htmlspecialchars($title); ?></h1>
 		</div>
 	</header>
 	<div class="beam"></div>
+	<?php endif; ?>
