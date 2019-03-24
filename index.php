@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Walaszkowe Cytaty</title>
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/micromodal.css">
@@ -11,15 +12,16 @@
 </head>
 <body>
 	<div class="menu">
-		<div class="pure-menu pure-menu-horizontal">
+		<div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
 		    <a href="#" class="pure-menu-heading pure-menu-link"><span class="grey">[</span>Walaszkowe<span class="grey">]</span> Cytaty</a>
 		    <ul class="pure-menu-list">
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Kapitan Bomba</a></li>
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Egzorcysta</a></li>
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Wściekłe Pięści Węża</a></li>
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blok Ekipa</a></li>
+		        <li class="pure-menu-item hidden-desktop"><a href="#" class="pure-menu-link change-font"><i class="fa fa-font"></i></a></li>
 		    </ul>
-		    <ul class="pure-menu-list float-right">
+		    <ul class="pure-menu-list float-right hidden-mobile">
 			    <li class="pure-menu-item text-right"><a href="#" class="pure-menu-link change-font"><i class="fa fa-font"></i></a></li>
 		    </ul>
 		</div>
@@ -75,7 +77,7 @@
 	        <blockquote class="blockquote"><p>Zapisaliście się dobrowolnie na program treningowy "Z kulturą fizyczną na Ty". Będziemy pakować, obciągać i ćwiczyć, żeby każdy miał szansę w dyskotece.</p></blockquote>
 	        <p>I w rytm disco polo! Witam Cię na stronie poświęconej cytatom z dzieł twórcy hitów hollywoodzkich, mistrza kamery (i napleta...tableta graficznego) - Bartosza "Filipa Barłosia" Walaszka.</p>
 	        <p>Strona ta jest tworzona przez społeczność - jeżeli nie potrafiłeś znaleźć swojego ulubionego tekstu - dodaj go poprzez <a href="#">formularz</a></p>
-	        <p>Pamiętaj, że gdybyś nie mógł się rozczytać - w każdym momencie możesz zmienić font, używając przycisku po prawej stronie menu.</p>
+	        <p>Pamiętaj, że gdybyś nie mógł się rozczytać - w każdym momencie możesz zmienić font, używając przycisku po prawej stronie menu (które na urządzeniach mobilnych jest przewijane).</p>
 	      </div>
 	    </div>
 	  </div>
@@ -85,37 +87,6 @@
 		<p>© 2019 WalaszkoweCytaty, <a href="https://kkrawczyk.pl/">Krzysztof Krawczyk</a></p>
 	</footer>
 	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-	<script>
-		window.onload = function()
-		{
-			MicroModal.init();
-		    const _showed = localStorage.getItem('modal_showed');
-		    const fontBtn = document.querySelector('.change-font');
-		    // Modal
-		    if (_showed === null) {
-		        localStorage.setItem('modal_showed', 1);
-		    	MicroModal.show('modal-1');
-		    }else{
-		    	//debug
-		    }
-
-		    // Change font
-		    fontBtn.onclick = function() {
-		    	let quotes = document.querySelectorAll('.quote');
-		    	for (let i of quotes) {
-		    		if (i.style.fontFamily == "Roboto") {
-				    	i.style.fontFamily = "Parisienne";
-				    	i.style.fontSize = "32px";
-				    	fontBtn.style.color = "#777";
-		    		}else{
-				    	i.style.fontFamily = "Roboto";
-				    	i.style.fontSize = "24px";
-				    	fontBtn.style.color = "#fe628e";
-		    		}
-		    		
-		    	}
-		    }
-		}
-	</script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>
