@@ -1,1 +1,1 @@
-"#WalaszkoweCytaty" 
+# WalaszkoweCytaty
