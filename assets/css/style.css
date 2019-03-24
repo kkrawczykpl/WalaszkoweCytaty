@@ -16,6 +16,10 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
+a{
+    color: #fe628e;
+    text-decoration: none;
+}
 .text-center{
 	text-align: center;
 }
@@ -32,6 +36,10 @@ body{
 	background-color: #fff;
     border-bottom: 1px solid #e4eaee;
 	padding: 10px;
+}
+.quote{
+	font-family: 'Parisienne', cursive;
+	font-size: 32px;
 }
 
 header{
@@ -58,7 +66,16 @@ header{
     height: 50px;
     margin-bottom: 10px;
 }
-.quote{
-	font-family: 'Parisienne', cursive;
-	font-size: 32px;
+.quotes{
+	padding: 0 30px;
+}
+footer{
+	background-color: #fff;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	border-top: 1px solid #e4eaee;
+	margin-top: 10px;
+	justify-content: space-evenly;
+	align-items: center;
 }
