@@ -13,12 +13,13 @@
 <body>
 	<div class="menu">
 		<div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
-		    <a href="#" class="pure-menu-heading pure-menu-link"><span class="grey">[</span>Walaszkowe<span class="grey">]</span> Cytaty</a>
+		    <a href="index.php" class="pure-menu-heading pure-menu-link"><span class="grey">[</span>Walaszkowe<span class="grey">]</span> Cytaty</a>
 		    <ul class="pure-menu-list">
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Kapitan Bomba</a></li>
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Egzorcysta</a></li>
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Wściekłe Pięści Węża</a></li>
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blok Ekipa</a></li>
+		        <li class="pure-menu-item"><a href="add.php" class="pure-menu-link">Dodaj</a></li>
 		        <li class="pure-menu-item hidden-desktop"><a href="#" class="pure-menu-link change-font"><i class="fa fa-font"></i></a></li>
 		    </ul>
 		    <ul class="pure-menu-list float-right hidden-mobile">
