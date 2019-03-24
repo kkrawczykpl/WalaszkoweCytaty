@@ -9,7 +9,15 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100|Roboto:400,300,100,500,700|Parisienne);
 
 /*----------  Helpers  ----------*/
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
 body {
+	position: relative;
+	margin: 0;
+	min-height: 100%;
+	padding-bottom: 60px;
 	background-color: #f1f1f1;
 	color: #2a2f33;
 	font-size: 16px;
@@ -28,6 +36,9 @@ a {
 
 .text-right {
 	text-align: right;
+}
+.float-right{
+	float: right;
 }
 
 .caption {
@@ -88,6 +99,10 @@ footer {
 	margin-top: 10px;
 	justify-content: space-evenly;
 	align-items: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .modal {
@@ -100,6 +115,11 @@ footer {
 
 .modal__container {
 	max-width: 920px;
+}
+
+#modal-1-content\20 modal__content > p {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
 }
 
 /*Blockquote*/
@@ -116,7 +136,7 @@ footer {
 
 .blockquote:before {
 	position: absolute;
-	font-family: 'FontAwesome';
+	font-family: "FontAwesome";
 	top: 0;
 	content: "\f10d";
 	font-size: 200px;

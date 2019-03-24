@@ -19,6 +19,9 @@
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Wściekłe Pięści Węża</a></li>
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blok Ekipa</a></li>
 		    </ul>
+		    <ul class="pure-menu-list float-right">
+			    <li class="pure-menu-item text-right"><a href="#" class="pure-menu-link change-font"><i class="fa fa-font"></i></a></li>
+		    </ul>
 		</div>
 	</div>
 	<header class="header">
@@ -64,13 +67,15 @@
 	    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
 	      <header class="modal__header">
 	        <h2 id="modal-1-title modal__title">
-	          Dzień dobry w Buhaju, mam na imię Domino, ale wszyscy mówią na mnie Domingo!
+	          🚀 Dzień dobry w Buhaju, mam na imię Domino, ale wszyscy mówią na mnie Domingo!
 	        </h2>
 	        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
 	      </header>
 	      <div id="modal-1-content modal__content">
-	        <blockquote class="blockquote"><p>Zapisaliście się dobrowolnie na program treningowy z kulturą fizyczną na ty. Będziemy pakować, obciągać i ćwiczyć, żeby każdy miał szansę w dyskotece.</p></blockquote>
-	        <p>I w rytm disco polo! Witam Cię na stronie poświęconej cytatom z dzieł twórcy hitów hollywoodzkich, mistrza kamery (i napleta...tableta graficznego) - Bartosza "Filipa Barłosia" Walaszka</p>
+	        <blockquote class="blockquote"><p>Zapisaliście się dobrowolnie na program treningowy "Z kulturą fizyczną na Ty". Będziemy pakować, obciągać i ćwiczyć, żeby każdy miał szansę w dyskotece.</p></blockquote>
+	        <p>I w rytm disco polo! Witam Cię na stronie poświęconej cytatom z dzieł twórcy hitów hollywoodzkich, mistrza kamery (i napleta...tableta graficznego) - Bartosza "Filipa Barłosia" Walaszka.</p>
+	        <p>Strona ta jest tworzona przez społeczność - jeżeli nie potrafiłeś znaleźć swojego ulubionego tekstu - dodaj go poprzez <a href="#">formularz</a></p>
+	        <p>Pamiętaj, że gdybyś nie mógł się rozczytać - w każdym momencie możesz zmienić font, używając przycisku po prawej stronie menu.</p>
 	      </div>
 	    </div>
 	  </div>
@@ -85,10 +90,30 @@
 		{
 			MicroModal.init();
 		    const _showed = localStorage.getItem('modal_showed');
+		    const fontBtn = document.querySelector('.change-font');
+		    // Modal
 		    if (_showed === null) {
 		        localStorage.setItem('modal_showed', 1);
-		    }else{
 		    	MicroModal.show('modal-1');
+		    }else{
+		    	//debug
+		    }
+
+		    // Change font
+		    fontBtn.onclick = function() {
+		    	let quotes = document.querySelectorAll('.quote');
+		    	for (let i of quotes) {
+		    		if (i.style.fontFamily == "Roboto") {
+				    	i.style.fontFamily = "Parisienne";
+				    	i.style.fontSize = "32px";
+				    	fontBtn.style.color = "#777";
+		    		}else{
+				    	i.style.fontFamily = "Roboto";
+				    	i.style.fontSize = "24px";
+				    	fontBtn.style.color = "#fe628e";
+		    		}
+		    		
+		    	}
 		    }
 		}
 	</script>
