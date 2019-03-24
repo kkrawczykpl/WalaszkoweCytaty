@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Walaszkowe Cytaty</title>
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/micromodal.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -56,17 +58,37 @@
 		    </div>
 		</div>
 	</div>
+
+	<div class="modal" id="modal-1" aria-hidden="true">
+	  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+	    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+	      <header class="modal__header">
+	        <h2 id="modal-1-title modal__title">
+	          Dzień dobry w Buhaju, mam na imię Domino, ale wszyscy mówią na mnie Domingo!
+	        </h2>
+	        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+	      </header>
+	      <div id="modal-1-content modal__content">
+	        <blockquote class="blockquote"><p>Zapisaliście się dobrowolnie na program treningowy z kulturą fizyczną na ty. Będziemy pakować, obciągać i ćwiczyć, żeby każdy miał szansę w dyskotece.</p></blockquote>
+	        <p>I w rytm disco polo! Witam Cię na stronie poświęconej cytatom z dzieł twórcy hitów hollywoodzkich, mistrza kamery (i napleta...tableta graficznego) - Bartosza "Filipa Barłosia" Walaszka</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<footer>
 		<p>© 2019 WalaszkoweCytaty, <a href="https://kkrawczyk.pl/">Krzysztof Krawczyk</a></p>
 	</footer>
-
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 	<script>
 		window.onload = function()
 		{
+			MicroModal.init();
 		    const _showed = localStorage.getItem('modal_showed');
 		    if (_showed === null) {
 		        localStorage.setItem('modal_showed', 1);
-		        $('#myModal').modal('show');
+		    }else{
+		    	MicroModal.show('modal-1');
 		    }
 		}
 	</script>
