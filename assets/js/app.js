@@ -6,8 +6,8 @@ window.onload = function()
     // Modal
     if (_showed === null) {
         localStorage.setItem('modal_showed', 1);
-    }else{
     	MicroModal.show('modal-1');
+    }else{
     	//debug
     }
 
