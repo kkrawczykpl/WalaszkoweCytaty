@@ -1,4 +1,5 @@
 <?php
+$title = 'Walaszkowe Cytaty - Dodaj Cytat';
 require_once("includes/header.php");
 require_once("includes/classes/QuoteDetailsFormProvider.php");
 

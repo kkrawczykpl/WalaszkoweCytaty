@@ -1,4 +1,7 @@
-<?php require_once("includes/header.php"); ?>
+<?php 
+$title = 'Walaszkowe Cytaty';
+require_once("includes/header.php");
+?>
 
 <div class="quotes">
 	<div class="pure-g text-center">

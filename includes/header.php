@@ -31,7 +31,7 @@
 	</div>
 	<header class="header">
 		<div class="panel">
-			<h1>Walaszkowe Cytaty</h1>
+			<h1><?php echo htmlspecialchars($title); ?></h1>
 		</div>
 	</header>
 	<div class="beam"></div>

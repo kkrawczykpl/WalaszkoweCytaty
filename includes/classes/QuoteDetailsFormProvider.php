@@ -14,7 +14,7 @@ class QuoteDetailsFormProvider {
 		$categoryInput = $this->createCategoryInput();
 		$submitButton = $this->createSubmitButton();
 
-		return "<form action='added.php' class='pure-form pure-form-aligned' method='POST' >
+		return "<form action='success.php' class='pure-form pure-form-aligned' method='POST' >
 					<fieldset>
 						$quoteInput
 						$authorInput
@@ -71,7 +71,7 @@ class QuoteDetailsFormProvider {
 		$requiredInfo = $this->createRequiredInfo();
 		return "<div class='pure-controls'>
 					$requiredInfo
-					<button type='submit' class='pure-button pure-button-primary'>Dodaj</button>
+					<button type='submit' name='submitButton' class='pure-button pure-button-primary'>Dodaj</button>
 				</div>";
 	}
 
