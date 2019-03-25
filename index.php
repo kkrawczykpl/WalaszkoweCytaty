@@ -4,7 +4,7 @@ require_once("includes/header.php");
 require_once("includes/classes/Quote.php");
 require_once("includes/classes/QuoteGrid.php");
 
-$quoteGrid = new QuoteGrid($con);
+$quoteGrid = new QuoteGrid($con, 6);
 
 echo $quoteGrid->create(null); 
 ?>

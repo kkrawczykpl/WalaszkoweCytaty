@@ -2,10 +2,11 @@
 
 class QuoteGrid {
 
-	private $con;
+	private $con, $amount;
 
-	public function __construct($con) {
+	public function __construct($con, $amount) {
 		$this->con = $con;
+		$this->amount = $amount;
 	}
 
 	public function create($quotes) {
@@ -24,7 +25,7 @@ class QuoteGrid {
 	}
 
 	public function generateItems() {
-		$query = $this->con->prepare("SELECT * FROM quotes LIMIT 6");
+		$query = $this->con->prepare("SELECT * FROM quotes LIMIT $this->amount");
 		$query->execute();
 
 		$quotesHtml = "";
@@ -34,10 +35,6 @@ class QuoteGrid {
 		}
 
 		return $quotesHtml;
-	}
-
-	public function generateItemsFromQuotes($quotes) {
-
 	}
 
 	public function createGridItem($quote) {
