@@ -12,7 +12,6 @@ $quote = new Quote($con, $_GET["id"]);
 $quote->incrementViews();
 
 ?>
-
 <div class="preview-quote pure-g">
 	<div class="pure-u-1-2 preview-half flex-center flex-column">
 		<blockquote class="blockquote"><p><?php echo $quote->getQuote(); ?></p></blockquote>
