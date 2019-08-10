@@ -218,6 +218,16 @@ textarea {
 .preview-half{
 	height: 100%;
 }
+.report{
+	font-size: 12px;
+}
+
+.button-warning {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(223, 117, 20); /* this is an orange */
+}
 
 @media(max-width:976px) {
 	.main-heading {

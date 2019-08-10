@@ -21,6 +21,7 @@ $quote->incrementViews();
 	<div class="pure-u-1-2 preview-half flex-center flex-column">
 		<blockquote class="blockquote"><p><?php echo $quote->getQuote(); ?></p></blockquote>
 		<p class="flex-right">- <?php echo $quote->getAuthor(); ?></p>
+		<p class="report">Zauważyłeś błąd? <a href="report.php">Zgłoś</a></p>
 	</div>
 	<div class="pure-u-1-2 preview-half">
 		<img src="<?php echo $quote->getImage()[0]; ?>" class="img-preview">
