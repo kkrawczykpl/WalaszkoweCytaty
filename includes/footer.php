@@ -10,7 +10,7 @@
 	      <div id="modal-1-content modal__content">
 	        <blockquote class="blockquote"><p>Zapisaliście się dobrowolnie na program treningowy "Z kulturą fizyczną na Ty". Będziemy pakować, obciągać i ćwiczyć, żeby każdy miał szansę w dyskotece.</p></blockquote>
 	        <p>I w rytm disco polo! Witam Cię na stronie poświęconej cytatom z dzieł twórcy hitów hollywoodzkich, mistrza kamery (i napleta...tableta graficznego) - Bartosza "Filipa Barłosia" Walaszka.</p>
-	        <p>Strona ta jest tworzona przez społeczność - jeżeli nie potrafiłeś znaleźć swojego ulubionego tekstu - dodaj go poprzez <a href="#">formularz</a></p>
+	        <p>Strona ta jest tworzona przez społeczność - jeżeli nie potrafiłeś znaleźć swojego ulubionego tekstu - dodaj go poprzez <a href="add.php">formularz</a></p>
 	        <p>Pamiętaj, że gdybyś nie mógł się rozczytać - w każdym momencie możesz zmienić font, używając przycisku po prawej stronie menu (które na urządzeniach mobilnych jest przewijane).</p>
 	      </div>
 	    </div>

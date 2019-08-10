@@ -19,7 +19,7 @@ $quote->incrementViews();
 ?>
 <div class="preview-quote pure-g">
 	<div class="pure-u-1-2 preview-half flex-center flex-column">
-		<blockquote class="blockquote"><p><?php echo $quote->getQuote(); ?></p></blockquote>
+		<blockquote class="blockquote"><p class="quote" style="font-family: Roboto; font-size: 24px;"><?php echo $quote->getQuote(); ?></p></blockquote>
 		<p class="flex-right">- <?php echo $quote->getAuthor(); ?></p>
 		<p class="report">Zauważyłeś błąd? <a href="report.php">Zgłoś</a></p>
 	</div>
