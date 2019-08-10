@@ -16,6 +16,10 @@ class Category {
         $this->sqlData = $query->fetch(PDO::FETCH_ASSOC);
 	}
 
+	public function getId() {
+		return $this->sqlData["id"];
+	}
+
 	public function getName() {
 		return $this->sqlData["name"];
 	}
