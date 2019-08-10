@@ -25,7 +25,7 @@ class Category {
 	}
 
 	public function getQuotes() {
-		$query = $this->con->prepare("SELECT * FROM quotes WHERE category = :id LIMIT $this->offset, $this->amount");
+		$query = $this->con->prepare("SELECT * FROM quotes WHERE category = :id AND status = '1' LIMIT $this->offset, $this->amount");
         $query->bindParam(":id", $this->id);
         $query->execute();
         $quotes = $query->fetchAll();

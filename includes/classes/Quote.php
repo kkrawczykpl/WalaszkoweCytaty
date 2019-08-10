@@ -6,11 +6,16 @@ class Quote {
 	public function __construct($con, $preview_id) {
 		$this->con = $con;
 
-		$query = $this->con->prepare("SELECT * FROM quotes WHERE id = :id");
+		$query = $this->con->prepare("SELECT * FROM quotes WHERE id = :id AND status = '1'");
         $query->bindParam(":id", $preview_id);
         $query->execute();
 
         $this->sqlData = $query->fetch(PDO::FETCH_ASSOC);
+
+        if (!isset($this->sqlData["quote"])) {
+        	echo "Błąd. Podany Cytat nie istnieje";
+        	exit();
+        }
 	}
 
 	public function getId() {

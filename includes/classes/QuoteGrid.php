@@ -25,7 +25,7 @@ class QuoteGrid {
 	}
 
 	public function generateItems() {
-		$query = $this->con->prepare("SELECT * FROM quotes LIMIT $this->amount");
+		$query = $this->con->prepare("SELECT * FROM quotes WHERE status = '1' LIMIT $this->amount");
 		$query->execute();
 
 		$quotesHtml = "";
