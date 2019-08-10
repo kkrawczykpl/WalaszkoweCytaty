@@ -1,5 +1,10 @@
 <?php 
 $nonHeader = true;
+$customCSS = 
+	"body{
+		padding-bottom: 0;
+		overflow: hidden;
+	}";
 require_once("includes/header.php");
 require_once("includes/classes/Quote.php");
 
