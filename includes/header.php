@@ -38,7 +38,7 @@
 		</div>
 	</div>
 	<?php if(!isset($nonHeader)): ?>
-	<header class="header">
+	<header class="static-header header">
 		<div class="panel">
 			<h1><?php echo htmlspecialchars($title); ?></h1>
 		</div>

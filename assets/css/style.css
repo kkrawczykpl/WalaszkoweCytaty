@@ -85,11 +85,17 @@ a {
 
 .header {
 	width: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header.jpg);
 	color: #fff;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+}
+
+.static-header {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
 }
 
 .panel {

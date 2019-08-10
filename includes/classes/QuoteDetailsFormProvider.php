@@ -63,7 +63,7 @@ class QuoteDetailsFormProvider {
 	private function createSourceInput() {
 		return "<div class='pure-control-group'>
 					<label for='source'>Źródło cytatu</label>
-					<input id='source' name='source' type='text' placeholder='Egzorcysta Odcinek 1 Sezon 1' required>
+					<input id='source' name='source' type='text' placeholder='Egzorcysta Odcinek 1 Sezon 1'>
 				</div>";
 	}
 
