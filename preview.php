@@ -23,7 +23,7 @@ $quote->incrementViews();
 		<p class="flex-right">- <?php echo $quote->getAuthor(); ?></p>
 	</div>
 	<div class="pure-u-1-2 preview-half">
-		<img src="https://www.wykop.pl/cdn/c3201142/comment_39hvRLvDImOyetPTrXNxZJGl5bHwQxme.jpg" class="img-preview">
+		<img src="<?php echo $quote->getImage()[0]; ?>" class="img-preview">
 	</div>
 </div>
 

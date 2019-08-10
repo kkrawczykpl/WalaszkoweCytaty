@@ -49,5 +49,31 @@ class Quote {
 
 		$this->sqlData["views"] = $this->sqlData["views"] + 1;
 	}
+
+	public function getImage() {
+		$images = $this->getImages();
+		if ($images) {
+			return $images[array_rand($images, 1)];
+		}else{
+			$images = $this->getRandomImage();
+			return $images[array_rand($images, 1)];
+		}
+	}
+
+	public function getImages() {
+		$name = trim($this->getAuthor());
+		$query = $this->con->prepare("SELECT img FROM author_images WHERE author LIKE :name");
+		$query->bindValue(":name", '%'.$name.'%');
+		$query->execute();
+		$images = $query->fetchAll();
+		return $images;
+	}
+
+	public function getRandomImage() {
+		$query = $this->con->prepare("SELECT img FROM author_images");
+		$query->execute();
+		$images = $query->fetchAll();
+		return $images;
+	}
 }
 ?>

@@ -28,7 +28,7 @@ class QuoteDetailsFormProvider {
 	private function createQuoteInput() {
 		return "<div class='pure-control-group'>
 					<label for='quote'>Cytat</label>
-					<textarea id='quote' name='quote' rows='3' placeholder='Jak on trzyma tego diaxa? Krzysiek ty miałeś kiedyś kątówkę w rękach?' required></textarea>
+					<textarea id='quote' name='quote' rows='3' placeholder='Jak on trzyma tego diaxa? Krzysiek, ty miałeś kiedyś kątówkę w rękach?' required></textarea>
 					<span class='pure-form-message-inline required-star'>*</span>
 				</div>";
 	}
