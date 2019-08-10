@@ -14,7 +14,7 @@ class QuoteGrid {
 			$gridItems = $this->generateItems();
 		}
 		else {
-			$grdItems = $this->generateItemsFromQuotes($quotes);
+			$gridItems = $this->generateItemsFromQuotes($quotes);
 		}
 
 		return "<div class='quotes'>
@@ -46,6 +46,16 @@ class QuoteGrid {
 					<p class='quote'>$quoteText</p>
 					<p class='text-right caption'>- $quoteAuthor</p>
 				</a>";
+	}
+
+	public function generateItemsFromQuotes($quotes) {
+		$quotesHtml = "";
+		foreach ($quotes as $row) {
+			$quote = new Quote($this->con, $row["id"]);
+			$quotesHtml .= $this->createGridItem($quote);
+		}
+
+		return $quotesHtml;
 	}
 
 }

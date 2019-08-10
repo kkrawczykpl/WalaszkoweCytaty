@@ -3,7 +3,7 @@
 class ReportUploadData {
 
 	private $con;
-	public $quote, $author, $source, $category;
+	public $url, $source, $category;
 
 	public function __construct($con, $url, $category, $message) {
 		$this->con = $con;

@@ -1,7 +1,7 @@
-<?php 
+	<?php 
 class Quote {
 
-	private $con, $sqlData;
+	private $con, $preview_id, $sqlData;
 
 	public function __construct($con, $preview_id) {
 		$this->con = $con;
